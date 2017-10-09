@@ -9,8 +9,8 @@
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended that you check this file into your version control system.
-#顯示出現在的db migrate長得如何，且會紀錄創的時間點
-ActiveRecord::Schema.define(version: 20171007011532) do
+
+ActiveRecord::Schema.define(version: 20170621132742) do
 
   create_table "stores", force: :cascade do |t|
     t.string "name"
