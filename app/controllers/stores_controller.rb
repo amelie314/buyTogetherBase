@@ -16,16 +16,16 @@ class StoresController < ApplicationController
     # store.address = params[:address]
 
     store.save
-    
-    #防止付費欄位被黑，只允許某些欄位可以修改
-    private
-    def store_params
-      params.require(:store).permit(:name, :descriptio, :address, :phone)
-    end
 
-    def show
-      @store = Store.find params[:id]
-    end
     redirect_to stores_path
+  end
+
+  def show
+    @store = Store.find params[:id]
+  end
+ #防止付費欄位被黑，只允許某些欄位可以修改
+  private
+  def store_params
+    params.require(:store).permit(:name, :description, :address, :phone)
   end
 end

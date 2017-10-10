@@ -1224,3 +1224,509 @@ Processing by StoresController#show as HTML
 Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:40:43 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (2.7ms)
+  Rendered application/_navbar.html.erb (1.8ms) [cache miss]
+  Rendered application/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 420ms (Views: 402.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:40:47 +0800
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.7ms)
+  Rendered application/_navbar.html.erb (2.1ms) [cache miss]
+  Rendered application/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:40:48 +0800
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.5ms)
+  Rendered application/_navbar.html.erb (3.3ms) [cache miss]
+  Rendered application/_footer.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 63ms (Views: 60.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:40:51 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (21.1ms)
+  Rendered application/_navbar.html.erb (1.5ms) [cache miss]
+  Rendered application/_footer.html.erb (1.2ms) [cache miss]
+Completed 200 OK in 76ms (Views: 66.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/store" for 127.0.0.1 at 2017-10-10 13:40:52 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/store"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/store" for 127.0.0.1 at 2017-10-10 13:40:52 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/store"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:40:54 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (4.6ms)
+  Rendered application/_navbar.html.erb (1.4ms) [cache miss]
+  Rendered application/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:40:55 +0800
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.4ms)
+  Rendered application/_navbar.html.erb (1.1ms) [cache miss]
+  Rendered application/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:40:58 +0800
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:40:58 +0800
+Processing by PagesController#homepage as HTML
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.4ms)
+  Rendered pages/homepage.html.erb within layouts/application (0.0ms)
+  Rendered application/_navbar.html.erb (4.4ms) [cache miss]
+  Rendered application/_navbar.html.erb (3.7ms) [cache miss]
+  Rendered application/_footer.html.erb (0.4ms) [cache miss]
+  Rendered application/_footer.html.erb (0.1ms) [cache miss]
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/s" for 127.0.0.1 at 2017-10-10 13:40:59 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/s"):
+  
+actionpack (5.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.1) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.1) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:40:59 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.6ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (2.2ms)
+  Rendered application/_navbar.html.erb (1.6ms) [cache miss]
+  Rendered application/_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:41:00 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (3.0ms)
+  Rendered application/_navbar.html.erb (1.4ms) [cache miss]
+  Rendered application/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 50ms (Views: 42.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:41:03 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (2.0ms)
+  Rendered application/_navbar.html.erb (1.6ms) [cache miss]
+  Rendered application/_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stores/2" for 127.0.0.1 at 2017-10-10 13:41:08 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (358.7ms)
+Completed 500 Internal Server Error in 365ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `＠store' for #<#<Class:0x007fdf72a83208>:0x007fdf6f545898>):
+    11:                   </figure>
+    12:                 </div>
+    13:                 <div class="media-content">
+    14:                   <p class="title is-4"><%= ＠store.name %></p>
+    15:                   <p class="subtitle is-6">@johnsmith</p>
+    16:                 </div>
+    17:               </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2053782148539876157_70298811117840'
+Started GET "/stores/2" for 127.0.0.1 at 2017-10-10 13:42:40 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:                 </figure>
+    12:               </div>
+    13:               <div class="media-content">
+    14:                 <p class="title is-4"><%= @store.name %></p>
+    15:                 <p class="subtitle is-6">@johnsmith</p>
+    16:               </div>
+    17:             </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2053782148539876157_70298805048700'
+Started GET "/stores/2" for 127.0.0.1 at 2017-10-10 13:42:44 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:                 </figure>
+    12:               </div>
+    13:               <div class="media-content">
+    14:                 <p class="title is-4"><%= @store.name %></p>
+    15:                 <p class="subtitle is-6">@johnsmith</p>
+    16:               </div>
+    17:             </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2053782148539876157_70298810277680'
+Started GET "/stores/3" for 127.0.0.1 at 2017-10-10 13:42:47 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:                 </figure>
+    12:               </div>
+    13:               <div class="media-content">
+    14:                 <p class="title is-4"><%= @store.name %></p>
+    15:                 <p class="subtitle is-6">@johnsmith</p>
+    16:               </div>
+    17:             </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2053782148539876157_70298810726840'
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 13:42:51 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:                 </figure>
+    12:               </div>
+    13:               <div class="media-content">
+    14:                 <p class="title is-4"><%= @store.name %></p>
+    15:                 <p class="subtitle is-6">@johnsmith</p>
+    16:               </div>
+    17:             </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2053782148539876157_70298839815780'
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 13:46:01 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (49.3ms)
+Completed 500 Internal Server Error in 65ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:                 </figure>
+    12:               </div>
+    13:               <div class="media-content">
+    14:                 <p class="title is-4"><%= @store.name %></p>
+    15:                 <p class="subtitle is-6">@johnsmith</p>
+    16:               </div>
+    17:             </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2053782148539876157_70298797349740'
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 13:47:19 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:                 </figure>
+    12:               </div>
+    13:               <div class="media-content">
+    14:                 <p class="title is-4"><%= @store.name %></p>
+    15:                 <p class="subtitle is-6">@johnsmith</p>
+    16:               </div>
+    17:             </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2053782148539876157_70298810289020'
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 13:49:17 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    11:                 </figure>
+    12:               </div>
+    13:               <div class="media-content">
+    14:                 <p class="title is-4"><%= @store.name %></p>
+    15:                 <p class="subtitle is-6">@johnsmith</p>
+    16:               </div>
+    17:             </div>
+  
+app/views/stores/show.html.erb:14:in `_app_views_stores_show_html_erb___2904788315559451093_70233575131080'
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 13:55:45 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.6ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (2.1ms)
+  Rendered application/_navbar.html.erb (3.2ms) [cache miss]
+  Rendered application/_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 456ms (Views: 422.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:56:00 +0800
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.3ms)
+  Rendered application/_navbar.html.erb (1.7ms) [cache miss]
+  Rendered application/_footer.html.erb (1.2ms) [cache miss]
+Completed 200 OK in 56ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 13:56:03 +0800
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (0.4ms)
+  Rendered application/_navbar.html.erb (2.4ms) [cache miss]
+  Rendered application/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:56:05 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (1.8ms)
+  Rendered application/_navbar.html.erb (3.9ms) [cache miss]
+  Rendered application/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:56:07 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (2.4ms)
+  Rendered application/_navbar.html.erb (2.9ms) [cache miss]
+  Rendered application/_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 64ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 13:56:07 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.4ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (4.3ms)
+  Rendered application/_navbar.html.erb (3.1ms) [cache miss]
+  Rendered application/_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 75ms (Views: 72.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 13:56:13 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (1.5ms)
+  Rendered application/_navbar.html.erb (1.7ms) [cache miss]
+  Rendered application/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 78ms (Views: 74.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 14:00:04 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.9ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (4.2ms)
+  Rendered application/_navbar.html.erb (6.9ms) [cache miss]
+  Rendered application/_footer.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 102ms (Views: 85.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/stores/3" for 127.0.0.1 at 2017-10-10 14:00:04 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mStore Load (0.2ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (1.5ms)
+  Rendered application/_navbar.html.erb (2.6ms) [cache miss]
+  Rendered application/_footer.html.erb (0.6ms) [cache miss]
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stores/2" for 127.0.0.1 at 2017-10-10 14:00:07 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (1.8ms)
+  Rendered application/_navbar.html.erb (3.2ms) [cache miss]
+  Rendered application/_footer.html.erb (0.8ms) [cache miss]
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/stores/1" for 127.0.0.1 at 2017-10-10 14:00:12 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStore Load (0.1ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (1.4ms)
+  Rendered application/_navbar.html.erb (3.5ms) [cache miss]
+  Rendered application/_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-10 22:28:40 +0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#homepage as HTML
+  Rendering pages/homepage.html.erb within layouts/application
+  Rendered pages/homepage.html.erb within layouts/application (2.4ms)
+  Rendered application/_navbar.html.erb (2.3ms) [cache miss]
+  Rendered application/_footer.html.erb (0.7ms) [cache miss]
+Completed 200 OK in 391ms (Views: 375.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 22:28:44 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (0.5ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (15.2ms)
+  Rendered application/_navbar.html.erb (3.6ms) [cache miss]
+  Rendered application/_footer.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 64ms (Views: 56.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2017-10-10 22:28:45 +0800
+Processing by StoresController#index as HTML
+  Rendering stores/index.html.erb within layouts/application
+  [1m[36mStore Load (1.2ms)[0m  [1m[34mSELECT "stores".* FROM "stores"[0m
+  Rendered stores/index.html.erb within layouts/application (4.2ms)
+  Rendered application/_navbar.html.erb (4.4ms) [cache miss]
+  Rendered application/_footer.html.erb (0.9ms) [cache miss]
+Completed 200 OK in 82ms (Views: 75.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/stores/2" for 127.0.0.1 at 2017-10-10 22:28:47 +0800
+Processing by StoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mStore Load (0.3ms)[0m  [1m[34mSELECT  "stores".* FROM "stores" WHERE "stores"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering stores/show.html.erb within layouts/application
+  Rendered stores/show.html.erb within layouts/application (4.1ms)
+  Rendered application/_navbar.html.erb (1.8ms) [cache miss]
+  Rendered application/_footer.html.erb (0.5ms) [cache miss]
+Completed 200 OK in 90ms (Views: 80.1ms | ActiveRecord: 0.3ms)
+
+
